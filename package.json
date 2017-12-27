@@ -20,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "cross-env": "^5.1.1",
     "jscs": "^3.0.7",
     "laravel-mix": "^1.6.2"

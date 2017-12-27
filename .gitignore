@@ -1,8 +1,6 @@
-
-/themes/qtec/assets/vendor/bootstrap
-/themes/qtec/assets/dist
-
+/themes/martin-materialize-parallax
 /vendor
+/themes/qtec/assets/vendor/bootstrap
 /node_modules
 /modules
 /themes/demo
