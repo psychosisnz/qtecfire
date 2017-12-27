@@ -1,4 +1,7 @@
 
+/themes/qtec/assets/vendor/bootstrap
+/themes/qtec/assets/dist
+
 /vendor
 /node_modules
 /modules
