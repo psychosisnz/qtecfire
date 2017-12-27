@@ -75,7 +75,13 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-
+$(window).scroll(function () {
+  if ($(this).scrollTop() > $(this).height()) {
+    $('.up-top-icon').addClass('active');
+  } else {
+    $('.up-top-icon').removeClass('active');
+  }
+});
 
 /***/ }),
 /* 2 */

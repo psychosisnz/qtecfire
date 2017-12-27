@@ -57,7 +57,8 @@ h1 {
 
 p {
   font-family: $font-primary;
-  font-weight: 300;
+	font-weight: 300;
+	padding-right: 75px; 
 }
 
 footer p {
@@ -67,9 +68,9 @@ footer p {
 
 .up-top-icon{
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background-color: rgba(17, 17, 17, 0.658);
+	bottom: 25px;
+	right: -120px;
+	background-color: rgb(46, 46, 46);
 	z-index: 10;
 	border-radius: 15em;
 	color: white;
@@ -79,4 +80,17 @@ footer p {
 	text-align: center;
 	line-height: 2.7rem;
 	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .6;
+
+	&:hover{
+		color: aliceblue;
+		background-color: $red-primary;
+		opacity: 1;
+	}
+	&.active{
+		right: 25px;
+		transition: all .3s ease-in-out;
+
+	}
 }

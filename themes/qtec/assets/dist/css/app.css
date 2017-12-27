@@ -8850,6 +8850,7 @@ h1 {
 p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
+  padding-right: 75px;
 }
 
 footer p {
@@ -8859,9 +8860,9 @@ footer p {
 
 .up-top-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(17, 17, 17, 0.658);
+  bottom: 25px;
+  right: -120px;
+  background-color: #2e2e2e;
   z-index: 10;
   border-radius: 15em;
   color: white;
@@ -8871,6 +8872,21 @@ footer p {
   text-align: center;
   line-height: 2.7rem;
   cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .6;
+}
+
+.up-top-icon:hover {
+  color: aliceblue;
+  background-color: #ff3232;
+  opacity: 1;
+}
+
+.up-top-icon.active {
+  right: 25px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .navbar-nav .nav-item {
