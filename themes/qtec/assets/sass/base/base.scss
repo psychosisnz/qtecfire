@@ -1,5 +1,5 @@
 @import 'variables';
-// 
+//Global reset for browsers 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,13 +75,13 @@ footer p {
 	border-radius: 15em;
 	color: white;
 	font-size: 2rem;
-	width: 2.7rem;
-	height: 2.7rem;
+	width: 2rem;
+	height: 2rem;
 	text-align: center;
-	line-height: 2.7rem;
+	line-height: 2rem;
 	cursor: pointer;
 	transition: all .3s ease;
-	opacity: .6;
+	opacity: .1;
 
 	&:hover{
 		color: aliceblue;
@@ -90,7 +90,10 @@ footer p {
 	}
 	&.active{
 		right: 25px;
-
+		width: 2.8rem;
+		height: 2.8rem;
+		line-height: 2.8rem;
+		opacity: .8;
 		transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 	}

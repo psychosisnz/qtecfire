@@ -1,5 +1,8 @@
 
-@import '../vendor/bootstrap/scss/bootstrap';
+// @import '../vendor/bootstrap/scss/bootstrap';
 @import 'base/base';
 @import 'navigation/navigation';
 
+.icon-bar {
+  border-image-width: 3px;
+}
