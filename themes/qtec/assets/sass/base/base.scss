@@ -1,5 +1,5 @@
 @import 'variables';
-// 
+//Global reset for browsers 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,13 +52,14 @@ table {
 
 h1 {
   font-family: $font-header-nav;
-  font-size: 2.5rem;
+	font-size: 2.5rem;
+	padding: 15px;
 }
 
 p {
   font-family: $font-primary;
 	font-weight: 300;
-	padding-right: 75px; 
+	padding: 35px;
 }
 
 footer p {
@@ -75,22 +76,26 @@ footer p {
 	border-radius: 15em;
 	color: white;
 	font-size: 2rem;
-	width: 2.7rem;
-	height: 2.7rem;
+	width: 2rem;
+	height: 2rem;
 	text-align: center;
-	line-height: 2.7rem;
+	line-height: 2rem;
 	cursor: pointer;
 	transition: all .3s ease;
-	opacity: .6;
+	opacity: .1;
 
 	&:hover{
-		color: aliceblue;
+		color: rgb(255, 255, 255);
 		background-color: $red-primary;
 		opacity: 1;
 	}
 	&.active{
 		right: 25px;
-		transition: all .3s ease-in-out;
+		width: 2.8rem;
+		height: 2.8rem;
+		line-height: 2.8rem;
+		opacity: .9;
+		transition: all .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 	}
 }

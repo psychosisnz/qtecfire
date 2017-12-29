@@ -2,6 +2,7 @@
 /themes/martin-materialize-parallax
 
 /vendor
+/themes/qtec/assets/dist/
 /themes/qtec/assets/vendor/bootstrap
 /node_modules
 /modules
