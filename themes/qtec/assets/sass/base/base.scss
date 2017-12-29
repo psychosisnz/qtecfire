@@ -52,13 +52,14 @@ table {
 
 h1 {
   font-family: $font-header-nav;
-  font-size: 2.5rem;
+	font-size: 2.5rem;
+	padding: 15px;
 }
 
 p {
   font-family: $font-primary;
 	font-weight: 300;
-	padding-right: 75px; 
+	padding: 35px;
 }
 
 footer p {
@@ -84,7 +85,7 @@ footer p {
 	opacity: .1;
 
 	&:hover{
-		color: aliceblue;
+		color: rgb(255, 255, 255);
 		background-color: $red-primary;
 		opacity: 1;
 	}
@@ -93,8 +94,8 @@ footer p {
 		width: 2.8rem;
 		height: 2.8rem;
 		line-height: 2.8rem;
-		opacity: .8;
-		transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		opacity: .9;
+		transition: all .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 	}
 }
