@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+@import 'base';
+@import 'variables';
 
 .contact-container{
   background-color: $grey-light;
@@ -11,14 +12,11 @@
   width: 50%;
   padding: 5%;
   margin-right: 20px;
-=======
-@import 'base';
-@import 'variables';
 
 #contact 
 {
   margin-right: 10%;
   margin-left: 10%;
   font-family:$font-primary;
->>>>>>> e855e99883ee2ce350e9ba87cbe762a70b6addcf
+
 }
