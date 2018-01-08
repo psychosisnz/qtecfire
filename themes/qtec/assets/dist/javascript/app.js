@@ -75,7 +75,7 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-// Scroll to TOP icon animation
+// Scroll to TOP icon Visuals animation
 $(window).scroll(function () {
   if ($(this).scrollTop() > $(this).height()) {
     $('.up-top-icon').addClass('active');

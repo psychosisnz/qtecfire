@@ -1,0 +1,26 @@
+.footer-top{
+  background-color: $grey;
+  color: white;
+}
+
+.footer-bottom{
+  display: grid;
+  grid-template-columns:  50px auto 50px;
+  border: 1px solid greenyellow;
+  height: 35px;
+  background-color: $grey-dark;
+  color: white;
+}
+.footer-bottom-left{
+  padding:0px;
+}
+.footer-bottom-center{
+  border: 1px solid blue;
+  width:80%;
+  padding: 0px;
+}
+.footer-bottom-right{
+  border: 1px solid red;
+  text-align: right;
+  padding: 0px;
+}

@@ -28,7 +28,8 @@ mix.browserSync({
   proxy: 'http://localhost/qtec',
   host: 'http://localhost:80/qtec',
   notify: false,
-  files:["./themes/qtec/assets/dist/css/*.css", "./themes/qtec/**/*.htm", "./themes/qtec/assets/dist/javascript/*.js", "./themes/qtec/assets/images/**/*.jpg"]
+  files:["./themes/qtec/assets/dist/css/*.css", "./themes/qtec/**/*.htm", "./themes/qtec/assets/dist/javascript/*.js", "./themes/qtec/assets/images/**/*.jpg",
+  "./themes/qtec/assets/images/**/*.svg"] 
 });
 
 
