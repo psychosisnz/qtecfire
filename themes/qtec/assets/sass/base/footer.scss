@@ -6,12 +6,13 @@
 .footer-bottom{
   display: grid;
   grid-template-columns:  50px auto 50px;
-  border: 1px solid greenyellow;
+  
   height: 35px;
   background-color: $grey-dark;
   color: white;
 }
 .footer-bottom-left{
+  border: 3px solid greenyellow;
   padding:0px;
 }
 .footer-bottom-center{
