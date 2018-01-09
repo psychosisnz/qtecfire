@@ -22,24 +22,24 @@
 }
 
 .footer-bottom{
-  display: grid;
-  grid-template-columns:  50px auto 50px;
+  //display: grid;
+  //grid-template-columns:  50px auto 50px;
   
   height: 35px;
   background-color: $grey-dark;
   color: white;
 }
 .footer-bottom-left{
-  border: 3px solid greenyellow;
+  //border: 3px solid greenyellow;
   padding:0px;
 }
 .footer-bottom-center{
-  border: 1px solid blue;
+  //border: 1px solid blue;
   width:80%;
   padding: 0px;
 }
 .footer-bottom-right{
-  border: 1px solid red;
+  //border: 1px solid red;
   text-align: right;
   padding: 0px;
 }

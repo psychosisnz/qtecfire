@@ -691,6 +691,19 @@ footer p {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+  grid-template-areas: 'bottom-left bottom-middle bottom-right';
+}
+
+.grid-item-1 {
+  grid-area: bottom-left;
+}
+
+.grid-item-2 {
+  grid-area: bottom-middle;
+}
+
+.grid-item-3 {
+  grid-area: bottom-right;
 }
 
 .footer-top {
@@ -699,26 +712,21 @@ footer p {
 }
 
 .footer-bottom {
-  display: grid;
-  grid-template-columns: 50px auto 50px;
   height: 35px;
   background-color: #4D4D4D;
   color: white;
 }
 
 .footer-bottom-left {
-  border: 3px solid greenyellow;
   padding: 0px;
 }
 
 .footer-bottom-center {
-  border: 1px solid blue;
   width: 80%;
   padding: 0px;
 }
 
 .footer-bottom-right {
-  border: 1px solid red;
   text-align: right;
   padding: 0px;
 }
