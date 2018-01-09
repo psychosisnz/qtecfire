@@ -1,6 +1,7 @@
 .team-container{
-
-  background-color: white;
+background-color: #fffcfc;
+background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
 .team-section{
@@ -33,6 +34,7 @@
   width: 14rem;
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
+  background-color: #fffcfc;
   .card-img-top{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -44,6 +46,7 @@
     padding-top: 5px;
   }
    .card-text{
+    background-color: #fffcfc;
     font-family: $font-primary;
     padding: 10px;
   }
