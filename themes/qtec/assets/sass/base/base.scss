@@ -96,8 +96,11 @@ footer p {
 		top: -20rem;
 		left: 2rem;
 		z-index: 2000;
-		width: 85px;
+		width: 70px;
 		transition: all .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		@include breakpoint($tablet-portrait){
+			width: 85px;
+		}
 }
 
 .scrolled{
