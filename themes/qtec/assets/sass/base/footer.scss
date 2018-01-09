@@ -1,19 +1,26 @@
 .grid-container{
+  border: 2px red solid;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: auto 60% auto;
   grid-template-rows: 50px;
-  justify-content: space-between;
-  align-content: center;
-  grid-template-areas: 'bottom-left bottom-middle bottom-right';
+ 
+  
 }
 .grid-item-1{
-  grid-area: bottom-left;
+  justify-self: center;
+
 }
 .grid-item-2{
-  grid-area: bottom-middle;
+  
 }
 .grid-item-3{
-  grid-area: bottom-right;
+  justify-self: center;
+
+  a{
+   
+    color: white;
+  }
+  
 }
 
 .footer-top{

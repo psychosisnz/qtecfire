@@ -52,6 +52,10 @@ table {
   font-size: 10px;
 }
 
+html, body {
+  height: 100%;
+}
+
 br {
   line-height: 5px;
 }
@@ -86,6 +90,10 @@ p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   padding: 35px;
+}
+
+.m-container {
+  min-height: 100%;
 }
 
 footer p {
@@ -283,6 +291,10 @@ table {
   font-size: 10px;
 }
 
+html, body {
+  height: 100%;
+}
+
 br {
   line-height: 5px;
 }
@@ -317,6 +329,10 @@ p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   padding: 35px;
+}
+
+.m-container {
+  min-height: 100%;
 }
 
 footer p {
@@ -581,6 +597,10 @@ table {
   font-size: 10px;
 }
 
+html, body {
+  height: 100%;
+}
+
 br {
   line-height: 5px;
 }
@@ -615,6 +635,10 @@ p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   padding: 35px;
+}
+
+.m-container {
+  min-height: 100%;
 }
 
 footer p {
@@ -683,27 +707,22 @@ footer p {
 }
 
 .grid-container {
+  border: 2px red solid;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: auto 60% auto;
   grid-template-rows: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  grid-template-areas: 'bottom-left bottom-middle bottom-right';
 }
 
 .grid-item-1 {
-  grid-area: bottom-left;
-}
-
-.grid-item-2 {
-  grid-area: bottom-middle;
+  justify-self: center;
 }
 
 .grid-item-3 {
-  grid-area: bottom-right;
+  justify-self: center;
+}
+
+.grid-item-3 a {
+  color: white;
 }
 
 .footer-top {

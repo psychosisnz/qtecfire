@@ -24,25 +24,28 @@
         {% styles %}
     </head>
     <body>
-        <!-- Navigation -->
-        {% partial 'navigation' %}
-        <!-- HERO-IMAGE -->
-        <header id="layout-header">
-            {% partial 'header' %}
-        </header>
-
-        <!-- Content -->
-        <section id="layout-content">
-            <div>{% page %}</div>
-        </section>
-        
-        <footer>
-            {% partial 'footer' %}
-        </footer>
-        <!-- BUTTON FOR FAST NAVIGATION TO THE PAGE TOP -->
-        <div class="up-top-icon" title="Up">
-            <i class="fa fa-angle-double-up"></i>
+        <div class="m-container">
+            <!-- Navigation -->
+            {% partial 'navigation' %}
+            <!-- HERO-IMAGE -->
+            <header id="layout-header">
+                {% partial 'header' %}
+            </header>
+    
+            <!-- Content -->
+            <section id="layout-content">
+                <div>{% page %}</div>
+            </section>
+            <div class="up-top-icon" title="Up">
+                    <i class="fa fa-angle-double-up"></i>
+            </div>
         </div>
+            <footer>
+                {% partial 'footer' %}
+            </footer>
+
+        <!-- BUTTON FOR FAST NAVIGATION TO THE PAGE TOP -->
+        
         <!-- Scripts -->
 
 <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
