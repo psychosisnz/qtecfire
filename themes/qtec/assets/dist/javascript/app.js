@@ -83,6 +83,18 @@ $(window).scroll(function () {
     $('.up-top-icon').removeClass('active');
   }
 });
+//Logo drop on scroll
+$(function () {
+  $(window).scroll(function () {
+
+    if ($(window).scrollTop() >= 300) {
+      $('.logo-s').addClass('scrolled');
+    } else {
+      $('.logo-s').removeClass('scrolled');
+    }
+  });
+});
+
 // Scroll to TOP on CLICK
 $('.up-top-icon').click(function () {
   $('html, body').stop().animate({
