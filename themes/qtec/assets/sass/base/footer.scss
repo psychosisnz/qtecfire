@@ -1,3 +1,21 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 50px;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-areas: 'bottom-left bottom-middle bottom-right';
+}
+.grid-item-1{
+  grid-area: bottom-left;
+}
+.grid-item-2{
+  grid-area: bottom-middle;
+}
+.grid-item-3{
+  grid-area: bottom-right;
+}
+
 .footer-top{
   background-color: $grey;
   color: white;

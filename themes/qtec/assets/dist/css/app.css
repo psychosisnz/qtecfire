@@ -682,6 +682,17 @@ footer p {
   font-family: "Merriweather Sans", sans-serif;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .footer-top {
   background-color: #a0a0a0;
   color: white;
