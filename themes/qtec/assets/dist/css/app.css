@@ -88,6 +88,10 @@ p {
   padding: 35px;
 }
 
+#layout-content {
+  border: 3px solid #ff3300;
+}
+
 footer p {
   font-family: "Arial", sans-serif;
   font-size: .75rem;
@@ -119,8 +123,8 @@ footer p {
   background-color: #FC2C2C;
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
   opacity: 1;
   -webkit-transition: all 0s ease-in;
   transition: all 0s ease-in;
@@ -229,6 +233,17 @@ body {
   }
 }
 
+.partial {
+  display: grid;
+  grid-template-columns: auto 90% auto;
+}
+
+@media (min-width: 640px) {
+  .partial {
+    grid-template-columns: auto 80% auto;
+  }
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -319,6 +334,10 @@ p {
   padding: 35px;
 }
 
+#layout-content {
+  border: 3px solid #ff3300;
+}
+
 footer p {
   font-family: "Arial", sans-serif;
   font-size: .75rem;
@@ -350,8 +369,8 @@ footer p {
   background-color: #FC2C2C;
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
   opacity: 1;
   -webkit-transition: all 0s ease-in;
   transition: all 0s ease-in;
@@ -452,32 +471,58 @@ footer p {
   background-color: #DEDEDE;
 }
 
-.profile-team-section {
-  background-color: white;
-}
-
-.profile-text-section {
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-  padding-left: 5rem;
-  width: 90%;
-  -webkit-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: .5rem;
-          column-gap: .5rem;
-  -webkit-column-rule-style: solid;
-          column-rule-style: solid;
-  -webkit-column-rule-width: 1px;
-          column-rule-width: 1px;
-}
-
-.profile-text-section p {
-  padding-top: 0%;
-}
-
 .profile-header {
   padding-top: 2rem;
   padding-left: 7rem;
+}
+
+.profile-text-section {
+  background-color: #DEDEDE;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .profile-text-section {
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    padding-top: 1.5rem;
+  }
+  .profile-text-section p {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+            column-rule-width: 1px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .profile-text-section {
+    padding-top: 2rem;
+  }
+  .profile-text-section p {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+            column-rule-width: 1px;
+    padding-top: 0px;
+  }
+}
+
+.team-section {
+  background-color: white;
+}
+
+.header-team {
+  padding-left: 7.1rem;
 }
 
 .profile-cards-section {
@@ -525,144 +570,6 @@ footer p {
 
 .card-social .btn:hover {
   color: #FC2C2C;
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-\:root {
-  font-size: 10px;
-}
-
-br {
-  line-height: 5px;
-}
-
-h1, h2 {
-  font-family: "Oswald", sans-serif;
-  color: #FC2C2C;
-}
-
-.block-header {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  width: 100%;
-}
-
-.block-header img {
-  width: 84px;
-  height: 30px;
-  padding-right: .7rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-family: "Merriweather Sans", sans-serif;
-  padding-left: 5.5rem;
-}
-
-p {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 300;
-  padding: 35px;
-}
-
-footer p {
-  font-family: "Arial", sans-serif;
-  font-size: .75rem;
-}
-
-.up-top-icon {
-  position: fixed;
-  bottom: 25px;
-  right: -120px;
-  background-color: #2e2e2e;
-  z-index: 10;
-  border-radius: 15em;
-  color: white;
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
-          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
-  font-size: 2rem;
-  width: 2rem;
-  height: 2rem;
-  text-align: center;
-  line-height: 2rem;
-  cursor: pointer;
-  opacity: .1;
-  -webkit-transition: all 0.3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
-  transition: all 0.3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
-}
-
-.up-top-icon:hover {
-  color: white;
-  background-color: #FC2C2C;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  opacity: 1;
-  -webkit-transition: all 0s ease-in;
-  transition: all 0s ease-in;
-}
-
-.up-top-icon.active {
-  right: 25px;
-  width: 2.8rem;
-  height: 2.8rem;
-  line-height: 2.8rem;
-  opacity: .9;
-  -webkit-transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .contact-container {

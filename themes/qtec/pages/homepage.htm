@@ -4,7 +4,25 @@ layout = "default"
 is_hidden = 0
 ==
 <div class="content-container">
-  {% partial 'services' %}
-  {% partial 'profile' %}
-  {% partial 'contact' %}
+  <div class="partial services-container">
+    <div></div>
+    <div>{% partial 'services' %}</div>
+    <div></div>
+  </div>
+  <div class="partial profile-container">
+    <div></div>
+    <div>{% partial 'profile' %}</div>
+    <div></div>
+  </div>
+  <div class="partial team-container">
+    <div></div>
+    <div>{% partial 'team' %}</div>
+    <div></div>
+  </div>
+  <div class="partial contact-container">
+    <div></div>
+    <div>{% partial 'contact' %}</div>
+    <div></div>
+  </div>
+
 </div>

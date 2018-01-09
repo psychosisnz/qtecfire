@@ -1,30 +1,10 @@
-.profile-container {
-  background-color: $grey-light;
-}
-
-.profile-team-section{
+.team-section{
 
   background-color: white;
 
 }
-.profile-text-section {
-  padding-top: 1.5rem;
-  padding-bottom: 3rem;
-  padding-left: 5rem;
-  width: 90%;
-  column-count: 3;
-  column-gap: .5rem;
-
-    column-rule-style: solid;
-
-    column-rule-width: 1px;
-  p{
-    padding-top: 0%;
-  }
-}
-.profile-header{
-  padding-top: 2rem;
-  padding-left: 7rem;
+.header-team{
+  padding-left: 7.1rem;
 }
 .profile-cards-section{
   width: 100%;
