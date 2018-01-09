@@ -88,10 +88,6 @@ p {
   padding: 35px;
 }
 
-#layout-content {
-  border: 3px solid #ff3300;
-}
-
 footer p {
   font-family: "Arial", sans-serif;
   font-size: .75rem;
@@ -235,12 +231,18 @@ body {
 
 .partial {
   display: grid;
-  grid-template-columns: auto 90% auto;
+  grid-template-columns: auto 95% auto;
 }
 
 @media (min-width: 640px) {
   .partial {
     grid-template-columns: auto 80% auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .partial {
+    grid-template-columns: auto 70% auto;
   }
 }
 
@@ -332,10 +334,6 @@ p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   padding: 35px;
-}
-
-#layout-content {
-  border: 3px solid #ff3300;
 }
 
 footer p {
@@ -484,8 +482,6 @@ footer p {
 
 @media (min-width: 640px) {
   .profile-text-section {
-    display: grid;
-    grid-template-columns: auto 90% auto;
     padding-top: 1.5rem;
   }
   .profile-text-section p {
@@ -498,7 +494,6 @@ footer p {
     -webkit-column-rule-width: 1px;
             column-rule-width: 1px;
     padding-top: 0px;
-    padding-left: 0px;
   }
 }
 
@@ -509,31 +504,39 @@ footer p {
   .profile-text-section p {
     -webkit-column-count: 3;
             column-count: 3;
-    -webkit-column-rule-style: solid;
-            column-rule-style: solid;
-    -webkit-column-rule-width: 1px;
-            column-rule-width: 1px;
-    padding-top: 0px;
   }
 }
 
-.team-section {
+.team-container {
   background-color: white;
 }
 
-.header-team {
-  padding-left: 7.1rem;
+.team-section {
+  padding-bottom: 2rem;
+}
+
+.header-team p {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 0;
 }
 
 .profile-cards-section {
-  width: 100%;
-  padding: 2rem 0 2rem 5rem;
   display: grid;
-  grid-template-columns: 4rem 1fr 1fr 1fr;
-  background-color: white;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .profile-cards-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .card {
+  justify-self: center;
   width: 14rem;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);

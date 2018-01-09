@@ -1,7 +1,10 @@
 .partial{
   display: grid;
-  grid-template-columns: auto 90% auto;
+  grid-template-columns: auto 95% auto;
   @include breakpoint ($tablet-portrait){
     grid-template-columns: auto 80% auto;
+  }
+  @include breakpoint ($desktop){
+    grid-template-columns: auto 70% auto;
   }
 }

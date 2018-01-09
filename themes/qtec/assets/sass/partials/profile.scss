@@ -1,5 +1,5 @@
 .profile-container {
-
+  
   background-color: $grey-light;
   #profile-header{
     
@@ -18,27 +18,20 @@
   padding-top: 1rem;
   padding-bottom: 2rem;
   @include breakpoint($tablet-portrait) {
-    display: grid;
-    grid-template-columns: auto 90% auto;
-    padding-top: 1.5rem;
-    
+    padding-top: 1.5rem;   
     p{
       column-count: 2;
       column-gap: 2rem;
       column-rule-style: solid;
       column-rule-width: 1px;
       padding-top: 0px;
-      padding-left: 0px;
+      
     }
   }
   @include breakpoint($desktop) {
     padding-top: 2rem;
-    
     p{
       column-count: 3;
-      column-rule-style: solid;
-      column-rule-width: 1px;
-      padding-top: 0px;
     }
   }
 }
