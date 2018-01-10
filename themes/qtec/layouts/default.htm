@@ -1,5 +1,4 @@
-description = "Default layout"
-==
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,9 +9,12 @@ description = "Default layout"
         <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700|Merriweather+Sans:300,400,400i,700,700i|Oswald:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css"> -->
 
         
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
@@ -22,47 +24,37 @@ description = "Default layout"
         {% styles %}
     </head>
     <body>
+            
         <!-- Navigation -->
-        {% partial 'navigation' %}
-        <!-- Header -->
+        <div class="navigation">{% partial 'navigation' %}</div>
+        <!-- HERO-IMAGE -->
         <header id="layout-header">
             {% partial 'header' %}
         </header>
 
         <!-- Content -->
         <section id="layout-content">
-            {% page %}
+            <div>{% page %}</div>
         </section>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-        <section id="layout-contact">
-            {% partial 'services' %}
-        </section>
-
-=======
         
->>>>>>> 45d422765b6989f80f9e6287a14d6af3be6956ec
-=======
-        
->>>>>>> 45d422765b6989f80f9e6287a14d6af3be6956ec
-        <!-- Footer -->
         <footer>
             {% partial 'footer' %}
         </footer>
-        <div class="up-top-icon" title="Up"><i class="fa fa-angle-double-up"></i></div>
+        <!-- BUTTON FOR FAST NAVIGATION TO THE PAGE TOP -->
+        <div class="up-top-icon" title="Up">
+            <i class="fa fa-angle-double-up"></i>
+        </div>
         <!-- Scripts -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
 <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <!-- <script src="{{ 'assets/vendor/js/bootstrap.js'|theme }}"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
         {% framework extras %}
         {% scripts %}
 

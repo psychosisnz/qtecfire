@@ -11,8 +11,11 @@
   }
 
 .navbar-default {
+    
+    z-index: 10;
     border-color: transparent;
-    background-color: rgba(34, 34, 34, 0.815);
+    background-color: rgba(34, 34, 34, 0.568);
+    text-align: end;
 }
 
 
@@ -71,10 +74,13 @@
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
-        border: 0;
+        padding-top: 25px;
+        
+        
         background-color: transparent;
-
+        margin-right: 0%;
+        padding-right: 0%;
+        text-align: right;
         transition: padding .3s;
     }
 
@@ -91,7 +97,7 @@
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: rgba(34, 34, 34, 0.856);
+        background-color: rgba(34, 34, 34, 0.822);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
