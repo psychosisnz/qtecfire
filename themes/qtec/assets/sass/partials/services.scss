@@ -1,21 +1,62 @@
 .content-container{
+  
   background-color: #fffcfc;
-background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+  background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
-
-.service-card{
-  position: absolute;
+.services-container {
+  @include breakpoint($tablet-portrait){
+    padding-bottom: 7rem;
+  }
+  
+}
+.service-card-container{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  @include breakpoint($tablet-portrait) {
+  padding-left: 2rem;
+  width: 80%;
+  position: absolute;;
   z-index: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @include breakpoint ($desktop){
+    width: 75%;
+  }
+}
+.service-card{
+  justify-self: center;
+  width: $service-card-width+20px;
+  @include breakpoint($tablet-portrait){
+    width: $service-card-width;
+  }
+
+  img{
+    width: $service-card-width+20px;
+    box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.712);
+    @include breakpoint($tablet-portrait){
+      width: $service-card-width;
+    }
+  }
+
   .card-header{
 
   }
   .card-body{
-
+    background-color: #fffcfccc;
   }
   .card-title{
-
+    text-align: center;
+    font-family: $font-header-nav;
+    font-size: 1.5rem;
+    color: $red-primary;
   }
   .card-text{
     
+    text-align: left;
+    padding: 10px;
+    font-family: $font-primary;
+    padding-left: 0px;
   }
 }

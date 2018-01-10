@@ -519,9 +519,73 @@ footer, a {
   background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 
+@media (min-width: 640px) {
+  .services-container {
+    padding-bottom: 7rem;
+  }
+}
+
+.service-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .service-card-container {
+    padding-left: 2rem;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .service-card-container {
+    width: 75%;
+  }
+}
+
 .service-card {
-  position: absolute;
-  z-index: 2;
+  justify-self: center;
+  width: 220px;
+}
+
+@media (min-width: 640px) {
+  .service-card {
+    width: 200px;
+  }
+}
+
+.service-card img {
+  width: 220px;
+  -webkit-box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.712);
+          box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.712);
+}
+
+@media (min-width: 640px) {
+  .service-card img {
+    width: 200px;
+  }
+}
+
+.service-card .card-body {
+  background-color: #fffcfccc;
+}
+
+.service-card .card-title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #FC2C2C;
+}
+
+.service-card .card-text {
+  text-align: left;
+  padding: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  padding-left: 0px;
 }
 
 .profile-container {
@@ -596,7 +660,7 @@ footer, a {
   }
 }
 
-.card {
+.team-card {
   justify-self: center;
   width: 14rem;
   border-radius: 10px;
@@ -605,19 +669,19 @@ footer, a {
   background-color: #fffcfc;
 }
 
-.card .card-img-top {
+.team-card .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 14rem;
 }
 
-.card .card-title {
+.team-card .card-title {
   font-family: "Merriweather Sans", sans-serif;
   text-align: center;
   padding-top: 5px;
 }
 
-.card .card-text {
+.team-card .card-text {
   background-color: #fffcfc;
   font-family: "Merriweather Sans", sans-serif;
   padding: 10px;
