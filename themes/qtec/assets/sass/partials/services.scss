@@ -1,4 +1,21 @@
-.services-footer{
-  background-color: $grey-light;
-  padding-bottom: 3rem;
+.content-container{
+  background-color: #fffcfc;
+background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+}
+
+.service-card{
+  position: absolute;
+  z-index: 2;
+  .card-header{
+
+  }
+  .card-body{
+
+  }
+  .card-title{
+
+  }
+  .card-text{
+    
+  }
 }

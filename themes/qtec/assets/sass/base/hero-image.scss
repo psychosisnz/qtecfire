@@ -31,6 +31,7 @@
 }
 // .cta-btn{
 .cta-btn{
+  
   justify-self: end;
  
   
@@ -67,9 +68,10 @@
   background-color: red;
   transition: all .25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   &:hover{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     border:3px white solid;
     background-color: red;
+    box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.904);
     transition: all .3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
   }
 }

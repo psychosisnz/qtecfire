@@ -476,9 +476,11 @@ footer, a {
 }
 
 .btn-danger:hover {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border: 3px white solid;
   background-color: red;
+  -webkit-box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.904);
+          box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.904);
   -webkit-transition: all 0.3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
   transition: all 0.3s cubic-bezier(0.5, -0.55, 0.265, 1.55);
 }
@@ -512,9 +514,14 @@ footer, a {
   min-height: 80vh;
 }
 
-.services-footer {
-  background-color: #DEDEDE;
-  padding-bottom: 3rem;
+.content-container {
+  background-color: #fffcfc;
+  background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+}
+
+.service-card {
+  position: absolute;
+  z-index: 2;
 }
 
 .profile-container {
