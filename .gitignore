@@ -1,4 +1,4 @@
-/themes/qtec/assets/dist
+/themes/qtec/assets/dist/
 /themes/martin-materialize-parallax
 
 /vendor
@@ -28,3 +28,4 @@ composer.lock
 
 # for netbeans
 nbproject
+themes/qtec/assets/dist/css/app.css
