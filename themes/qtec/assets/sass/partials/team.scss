@@ -34,7 +34,7 @@ background-image: url("https://www.transparenttextures.com/patterns/transparent-
     justify-self: center;
     width: 14rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
     background-color: #fffcfc;
     .card-img-top{
       border-top-left-radius: 10px;
@@ -62,8 +62,11 @@ background-image: url("https://www.transparenttextures.com/patterns/transparent-
   .btn{
     color: $asphalt-black;
     padding: 2px;
+    transition: all 0.15s ease-in;
     &:hover{
       color:$red-primary;
+      transition: all 0.15s ease-in;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
     }
   }
 }
