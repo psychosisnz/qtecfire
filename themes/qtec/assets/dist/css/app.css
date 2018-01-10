@@ -643,10 +643,40 @@ footer, a {
 .contact-container {
   background-color: #DEDEDE;
   width: 100%;
+  padding-bottom: 2rem;
+}
+
+.contact-container .btn {
+  font-family: "Segoe UI", sans-serif;
+  border: 3px solid white;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .contact-content {
+    grid-template-columns: 50% 40%;
+  }
+}
+
+.contact-text-section {
+  padding-top: 5%;
+}
+
+.contact-text-section img {
+  width: 90%;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.267);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.267);
+}
+
+.contact-text-section p {
+  padding-left: 0;
 }
 
 .contact-form {
-  width: 50%;
   padding: 5%;
   margin-right: 20px;
 }
@@ -654,6 +684,10 @@ footer, a {
 #contact {
   margin-right: 10%;
   margin-left: 10%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.form-control {
   font-family: "Merriweather Sans", sans-serif;
 }
 

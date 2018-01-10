@@ -2,12 +2,33 @@
 .contact-container{
   background-color: $grey-light;
   width: 100%;
+  padding-bottom: 2rem;
+  .btn{
+    font-family: $font-cta-btn;
+    border: 3px solid white;
+  }
 }
-
-
+.contact-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  @include breakpoint ($tablet-portrait){
+    grid-template-columns: 50% 40%;
+  }
+}
+.contact-text-section{
+  padding-top: 5%;
+  img{
+    width: 90%;
+    
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.267);
+  }
+  p{
+    padding-left: 0;
+  }
+}
 .contact-form{
   
-  width: 50%;
+  
   padding: 5%;
   margin-right: 20px;
 }
@@ -17,4 +38,7 @@
   margin-left: 10%;
   font-family:$font-primary;
 
+}
+.form-control{
+  font-family: $font-primary;
 }
