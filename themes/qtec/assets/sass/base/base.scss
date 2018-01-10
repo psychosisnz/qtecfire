@@ -83,10 +83,11 @@ p {
 #layout-content{	
 
 }
-footer p {
-  font-family: $font-footer;
+footer, a {
+  font-family: $font-primary;
   font-size: .75rem;
 }
+
 .navigation{
 	z-index: 6;
 }

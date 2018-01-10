@@ -1,5 +1,5 @@
 .grid-container-1{
-  border: 2px blue solid;
+  
   display: grid;
   grid-template-columns: auto auto auto;
   align-content: center;
@@ -16,36 +16,42 @@
   margin: 2px;
 }
 .grid-item-1-1{
+  padding: 1rem 0 1rem 0;
+  li{
+    padding-bottom: 0.2rem;
+  }
   grid-column: 2 / span 2;
-  @include breakpoint (min-width $tablet-portrait){
+  @include breakpoint ($tablet-portrait){
     grid-column: 3 /span 2;
   }
 }
 
 .grid-container-2{
-  border: 2px red solid;
+  
   display: grid;
-  grid-template-columns: auto 20% auto;
+  grid-template-columns: auto auto 20%;
   align-content: center;
-  @include breakpoint (min-width $tablet-portrait){
+  @include breakpoint ($tablet-portrait){
     justify-content: space-between;
   }
 }
 .grid-item-1-2{
-  justify-self: center;
+  justify-self: start;
   margin: 5px;
 }
 .grid-item-2-2{
   
 }
 .grid-item-3-2{
-  justify-self: center;
+ // justify-self: center;
 margin: 5px;
   a{
    
     color: white;
   }
-  
+  @include breakpoint ($tablet-portrait){
+    grid-column: 3 / span 2;
+  }
 }
 
 .footer-top{
