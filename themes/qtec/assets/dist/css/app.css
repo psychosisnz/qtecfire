@@ -461,6 +461,15 @@ footer, a {
   }
 }
 
+@media (min-width: 1025px) {
+  .cta {
+    padding-left: 3rem;
+    width: 33rem;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+}
+
 .cta-btn {
   justify-self: end;
 }
@@ -498,6 +507,15 @@ footer, a {
   .logo {
     padding-left: 3rem;
     width: 26rem;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo {
+    padding-left: 3rem;
+    width: 33rem;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
@@ -543,7 +561,7 @@ footer, a {
 
 @media (min-width: 1025px) {
   .service-card-container {
-    width: 75%;
+    width: 70%;
   }
 }
 

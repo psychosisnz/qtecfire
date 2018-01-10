@@ -22,7 +22,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   @include breakpoint ($desktop){
-    width: 75%;
+    width: 70%;
   }
 }
 .service-card{
