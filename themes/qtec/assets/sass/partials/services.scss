@@ -28,6 +28,7 @@
 .service-card{
   justify-self: center;
   width: $service-card-width+20px;
+  
   @include breakpoint($tablet-portrait){
     width: $service-card-width;
   }
@@ -44,6 +45,7 @@
 
   }
   .card-body{
+    height: 205px;
     background-color: #fffcfccc;
   }
   .card-title{
