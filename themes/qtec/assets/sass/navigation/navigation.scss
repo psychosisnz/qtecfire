@@ -45,10 +45,11 @@
     background-color:$red-primary;
 }
 
-.navbar-default .nav li a {
+.navbar-default .nav li a  {
     text-transform: uppercase;
     font-family: $font-header-nav;
     font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     text-align: end;
     color: #fff;

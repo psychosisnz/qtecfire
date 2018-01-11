@@ -4,8 +4,18 @@
   #profile-header{
     
   }
+ 
+}
+#profile{
+  width: 100%;
+  margin-top: 2.3rem;
+  padding-top: 2.4rem;
   @include breakpoint ($tablet-portrait) {
-    
+    width: 100%;
+    margin-top: 5rem;
+  }
+  @include breakpoint ($desktop){
+    width: 85%;
   }
 }
 .profile-header{
@@ -14,25 +24,53 @@
 }
 
 .profile-text-section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   background-color: $grey-light;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  text-indent: 1.5rem;
+
   @include breakpoint($tablet-portrait) {
-    padding-top: 1.5rem;   
+    grid-template-columns: 60% auto;
+    padding-top: 1.5rem;
+    iframe {
+      width: 420px;
+      height: 345px;
+    }
     p{
-      column-count: 2;
+      column-count: 1;
       column-gap: 2rem;
       column-rule-style: solid;
       column-rule-width: 1px;
       padding-top: 0px;
-      
+    p#profile-p-2{
+       column-count: 1;
+     }
     }
   }
   @include breakpoint($desktop) {
+    grid-template-columns: 50% 40%;
     padding-top: 2rem;
-    p{
-      column-count: 3;
+    iframe {
+      padding-left: 3rem;
     }
+    p{
+      padding-left: 1rem;
+      column-count: 1;
+    }
+    div#profile-p-2{
+      
+      padding-top: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      p{
+        padding-left: 0;
+        column-count: 1;
+      }
+    }
+
   }
 }
 

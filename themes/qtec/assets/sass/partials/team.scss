@@ -16,7 +16,9 @@ background-image: url("https://www.transparenttextures.com/patterns/transparent-
   }
 }
 .cards-container {
-
+  @include breakpoint ($desktop){
+    width: 75%;
+  }
   
 }
 .profile-cards-section{

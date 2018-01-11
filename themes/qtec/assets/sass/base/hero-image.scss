@@ -95,7 +95,7 @@
   }
   @include breakpoint($desktop){
     padding-left: 3rem;
-    width: $logo-width+10rem;
+    width: $logo-width+6rem;
     transition: all 0.3s ease-in;
   }
   // background-image: url('../../images/logo-l.svg');

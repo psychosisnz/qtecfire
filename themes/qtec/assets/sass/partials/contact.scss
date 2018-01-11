@@ -2,6 +2,7 @@
 .contact-container{
   background-color: $grey-light;
   width: 100%;
+  padding-top: 2.4rem;
   padding-bottom: 2rem;
   .btn{
     font-family: $font-cta-btn;
@@ -9,7 +10,7 @@
   }
 }
 .contact-content{
-  margin-left: 10%;
+  margin-left: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   @include breakpoint ($tablet-portrait){

@@ -4,8 +4,9 @@
   background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 .services-container {
+  padding-top: 2.4rem;
   @include breakpoint($tablet-portrait){
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
   }
   
 }
@@ -22,12 +23,13 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   @include breakpoint ($desktop){
-    width: 70%;
+    width: 60%;
   }
 }
 .service-card{
   justify-self: center;
   width: $service-card-width+20px;
+  // box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.712);
   
   @include breakpoint($tablet-portrait){
     width: $service-card-width;
@@ -35,6 +37,7 @@
 
   img{
     width: $service-card-width+20px;
+    
     box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.712);
     @include breakpoint($tablet-portrait){
       width: $service-card-width;
@@ -45,8 +48,9 @@
 
   }
   .card-body{
-    height: 205px;
-    background-color: #fffcfccc;
+    height: 200px;
+    // background-color: #fffcfccc;
+    // box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.404);
   }
   .card-title{
     text-align: center;

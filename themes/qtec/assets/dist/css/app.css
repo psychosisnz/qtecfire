@@ -206,6 +206,7 @@ body {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   text-align: end;
   color: #fff;
@@ -515,7 +516,7 @@ footer, a {
 @media (min-width: 1025px) {
   .logo {
     padding-left: 3rem;
-    width: 33rem;
+    width: 29rem;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
@@ -537,9 +538,13 @@ footer, a {
   background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 
+.services-container {
+  padding-top: 2.4rem;
+}
+
 @media (min-width: 640px) {
   .services-container {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -561,7 +566,7 @@ footer, a {
 
 @media (min-width: 1025px) {
   .service-card-container {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -589,8 +594,7 @@ footer, a {
 }
 
 .service-card .card-body {
-  height: 205px;
-  background-color: #fffcfccc;
+  height: 200px;
 }
 
 .service-card .card-title {
@@ -611,24 +615,52 @@ footer, a {
   background-color: #DEDEDE;
 }
 
+#profile {
+  width: 100%;
+  margin-top: 2.3rem;
+  padding-top: 2.4rem;
+}
+
+@media (min-width: 640px) {
+  #profile {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #profile {
+    width: 85%;
+  }
+}
+
 .profile-header {
   padding-top: 2rem;
   padding-left: 7rem;
 }
 
 .profile-text-section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
   background-color: #DEDEDE;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  text-indent: 1.5rem;
 }
 
 @media (min-width: 640px) {
   .profile-text-section {
+    grid-template-columns: 60% auto;
     padding-top: 1.5rem;
   }
+  .profile-text-section iframe {
+    width: 420px;
+    height: 345px;
+  }
   .profile-text-section p {
-    -webkit-column-count: 2;
-            column-count: 2;
+    -webkit-column-count: 1;
+            column-count: 1;
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
     -webkit-column-rule-style: solid;
@@ -637,15 +669,34 @@ footer, a {
             column-rule-width: 1px;
     padding-top: 0px;
   }
+  .profile-text-section p p#profile-p-2 {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
 }
 
 @media (min-width: 1025px) {
   .profile-text-section {
+    grid-template-columns: 50% 40%;
     padding-top: 2rem;
   }
+  .profile-text-section iframe {
+    padding-left: 3rem;
+  }
   .profile-text-section p {
-    -webkit-column-count: 3;
-            column-count: 3;
+    padding-left: 1rem;
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  .profile-text-section div#profile-p-2 {
+    padding-top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .profile-text-section div#profile-p-2 p {
+    padding-left: 0;
+    -webkit-column-count: 1;
+            column-count: 1;
   }
 }
 
@@ -664,6 +715,12 @@ footer, a {
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   padding-bottom: 0;
+}
+
+@media (min-width: 1025px) {
+  .cards-container {
+    width: 75%;
+  }
 }
 
 .profile-cards-section {
@@ -730,6 +787,7 @@ footer, a {
 .contact-container {
   background-color: #DEDEDE;
   width: 100%;
+  padding-top: 2.4rem;
   padding-bottom: 2rem;
 }
 
@@ -739,7 +797,7 @@ footer, a {
 }
 
 .contact-content {
-  margin-left: 10%;
+  margin-left: 1rem;
   display: grid;
   grid-template-columns: 1fr;
 }
