@@ -18,7 +18,7 @@
 .grid-item-1-1{
   padding: 1rem 0 1rem 0;
   li{
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.5rem;
   }
   grid-column: 2 / span 2;
   @include breakpoint ($tablet-portrait){
@@ -29,21 +29,27 @@
 .grid-container-2{
   
   display: grid;
-  grid-template-columns: auto auto 20%;
+  grid-template-columns: auto 60% auto;
   align-content: center;
   @include breakpoint ($tablet-portrait){
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .grid-item-1-2{
   justify-self: start;
   margin: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .grid-item-2-2{
-  
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  justify-self: center;
 }
 .grid-item-3-2{
- // justify-self: center;
+ justify-self: center;
+ padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
 margin: 5px;
   a{
    
