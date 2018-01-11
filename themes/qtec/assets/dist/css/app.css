@@ -589,6 +589,7 @@ footer, a {
 }
 
 .service-card .card-body {
+  height: 205px;
   background-color: #fffcfccc;
 }
 
