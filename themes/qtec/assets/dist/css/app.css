@@ -677,7 +677,7 @@ footer, a {
 
 @media (min-width: 1025px) {
   .profile-text-section {
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 60% 40%;
     padding-top: 2rem;
   }
   .profile-text-section iframe {
