@@ -9,6 +9,7 @@
   }
 }
 .contact-content{
+  margin-left: 10%;
   display: grid;
   grid-template-columns: 1fr;
   @include breakpoint ($tablet-portrait){
@@ -35,7 +36,7 @@
 #contact 
 {
   margin-right: 10%;
-  margin-left: 10%;
+  
   font-family:$font-primary;
 
 }

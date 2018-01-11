@@ -739,6 +739,7 @@ footer, a {
 }
 
 .contact-content {
+  margin-left: 10%;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -770,7 +771,6 @@ footer, a {
 
 #contact {
   margin-right: 10%;
-  margin-left: 10%;
   font-family: "Merriweather Sans", sans-serif;
 }
 
