@@ -108,6 +108,27 @@ footer, a {
 	top: .4rem;
 	transition: all .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+#phone-navbar{
+	a {
+		font-size: 1.2rem;
+		position:fixed;
+		z-index: 100;
+		top: 1.5rem;
+		left: 9rem;
+		color: white;
+		font-family: $font-header-nav;
+		font-weight: 500;
+		letter-spacing: .1rem;
+		&:hover{
+			color: $red-primary;
+			text-decoration: none;
+		}
+		@include breakpoint ($tablet-landscape){
+			top: 1.8rem;
+		}
+
+	}
+}
 .up-top-icon{
 	position: fixed;
 	bottom: 25px;

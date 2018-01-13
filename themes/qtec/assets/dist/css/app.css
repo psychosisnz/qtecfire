@@ -119,6 +119,29 @@ footer, a {
   transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+#phone-navbar a {
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 100;
+  top: 1.5rem;
+  left: 9rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+#phone-navbar a:hover {
+  color: #FC2C2C;
+  text-decoration: none;
+}
+
+@media (min-width: 771px) {
+  #phone-navbar a {
+    top: 1.8rem;
+  }
+}
+
 .up-top-icon {
   position: fixed;
   bottom: 25px;
@@ -173,7 +196,7 @@ body {
 .navbar-default {
   z-index: 10;
   border-color: transparent;
-  background-color: rgba(34, 34, 34, 0.568);
+  background-color: rgba(34, 34, 34, 0.822);
   text-align: end;
 }
 
@@ -395,6 +418,29 @@ footer, a {
   transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+#phone-navbar a {
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 100;
+  top: 1.5rem;
+  left: 9rem;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+#phone-navbar a:hover {
+  color: #FC2C2C;
+  text-decoration: none;
+}
+
+@media (min-width: 771px) {
+  #phone-navbar a {
+    top: 1.8rem;
+  }
+}
+
 .up-top-icon {
   position: fixed;
   bottom: 25px;
@@ -549,6 +595,7 @@ footer, a {
 }
 
 .service-card-container {
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
@@ -594,7 +641,7 @@ footer, a {
 }
 
 .service-card .card-body {
-  height: 200px;
+  height: 220px;
 }
 
 .service-card .card-title {
@@ -623,14 +670,8 @@ footer, a {
 
 @media (min-width: 640px) {
   #profile {
-    width: 100%;
+    width: 90%;
     margin-top: 5rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  #profile {
-    width: 85%;
   }
 }
 
@@ -649,42 +690,54 @@ footer, a {
   text-indent: 1.5rem;
 }
 
+.profile-text-section .video {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.profile-text-section .video iframe {
+  padding-left: 0;
+  width: 250px;
+  height: auto;
+}
+
+.profile-text-section .video #profile-p-1 p {
+  padding-top: 0;
+}
+
+.profile-text-section .video #profile-p-2 {
+  padding-top: 0;
+}
+
 @media (min-width: 640px) {
-  .profile-text-section {
-    grid-template-columns: 60% auto;
-    padding-top: 1.5rem;
+  .profile-text-section .video {
+    justify-self: center;
   }
-  .profile-text-section iframe {
-    width: 420px;
-    height: 345px;
-  }
-  .profile-text-section p {
-    -webkit-column-count: 1;
-            column-count: 1;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-    -webkit-column-rule-style: solid;
-            column-rule-style: solid;
-    -webkit-column-rule-width: 1px;
-            column-rule-width: 1px;
-    padding-top: 0px;
-  }
-  .profile-text-section p p#profile-p-2 {
-    -webkit-column-count: 1;
-            column-count: 1;
+  .profile-text-section .video iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 280px;
   }
 }
 
 @media (min-width: 1025px) {
   .profile-text-section {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: auto 50%;
     padding-top: 2rem;
+    line-height: 1.4rem;
   }
   .profile-text-section iframe {
-    padding-left: 3rem;
-  }
-  .profile-text-section p {
+    width: 400px;
+    height: 300px;
     padding-left: 1rem;
+  }
+  .profile-text-section #profile-p-1 {
+    padding-left: 2rem;
+  }
+  .profile-text-section #profile-p-1 p {
+    padding-top: 0;
+    padding-left: 2rem;
     -webkit-column-count: 1;
             column-count: 1;
   }
@@ -693,9 +746,7 @@ footer, a {
     padding-top: 1rem;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2 p;
-    grid-row-start-padding-left: 0;
-    grid-row-start-column-count: 1;
+    grid-row-start: 2;
   }
 }
 
@@ -706,6 +757,7 @@ footer, a {
 }
 
 .team-section {
+  padding-top: 2.4rem;
   padding-bottom: 2rem;
 }
 
@@ -752,6 +804,8 @@ footer, a {
 
 .team-card .card-title {
   font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  color: #4c4cc9;
   text-align: center;
   padding-top: 5px;
 }
@@ -759,28 +813,33 @@ footer, a {
 .team-card .card-text {
   background-color: #fffcfc;
   font-family: "Merriweather Sans", sans-serif;
-  padding: 10px;
+  padding: 1rem;
+  line-height: 1.3rem;
 }
 
 .card-social {
+  padding-left: 1rem;
   padding-right: 15px;
   padding-bottom: 15px;
-  text-align: right;
+  text-align: left;
 }
 
-.card-social .btn {
+.card-social a {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: .1rem;
+  font-size: .9rem;
   color: #545454;
   padding: 2px;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
+  line-height: 1.2rem;
 }
 
-.card-social .btn:hover {
+.card-social a:hover {
   color: #FC2C2C;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
-  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
-          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
+  text-decoration: none;
 }
 
 .contact-container {
@@ -818,7 +877,13 @@ footer, a {
 }
 
 .contact-text-section p {
+  line-height: 1.4rem;
   padding-left: 0;
+}
+
+.contact-text-section a {
+  font-size: 1.1rem;
+  text-decoration: underline;
 }
 
 .contact-form {

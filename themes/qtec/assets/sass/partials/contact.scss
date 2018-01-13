@@ -25,7 +25,12 @@
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.267);
   }
   p{
+    line-height: 1.4rem;
     padding-left: 0;
+  }
+  a{
+    font-size: 1.1rem;
+    text-decoration: underline;
   }
 }
 .contact-form{
