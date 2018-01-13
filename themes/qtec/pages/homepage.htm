@@ -2,6 +2,9 @@ title = "homepage"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[DevINX\ContactUs\Components\ContactForm contactForm]
+injectBootstrapAssets = 0
 ==
 <div class="content-container">
   <div class="partial services-container">
@@ -21,7 +24,26 @@ is_hidden = 0
   </div>
   <div class="partial contact-container">
     <div></div>
-    <div>{% partial 'contact' %}</div>
+    <div>
+        <div id="contact" class="contact-container">
+            <div class="block-header">
+            
+                <h1>
+                  <img class="header-element" src="{{'assets/images/header-element.svg'|theme}}">Contact Us</h1>
+                <br>
+                <h2>Have a query? Send us a message!</h2>
+              </div>
+        <div class="contact-content">
+            <div class="contact-form">
+              {% component 'contactForm' %}
+            </div>
+            <div class="contact-text-section">
+              <img src="{{'assets/images/brand-cars.jpg'|theme}}" alt="" sizes="" srcset="">
+              <p>We aim to respond to your mail within a working day. If we havent responded within one working day feel free to call us on <a href="tel:0800783234"><b>0800&nbsp;783&nbsp;234</b></a>.</p>
+            </div>
+        </div>
+        </div>
+    </div>
     <div></div>
   </div>
 
