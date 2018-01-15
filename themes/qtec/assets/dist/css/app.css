@@ -79,7 +79,13 @@ h1 {
 
 h2 {
   font-family: "Merriweather Sans", sans-serif;
-  padding-left: 5.5rem;
+  padding-left: 0rem;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    padding-left: 5.5rem;
+  }
 }
 
 p {
@@ -378,7 +384,13 @@ h1 {
 
 h2 {
   font-family: "Merriweather Sans", sans-serif;
-  padding-left: 5.5rem;
+  padding-left: 0rem;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    padding-left: 5.5rem;
+  }
 }
 
 p {

@@ -73,7 +73,10 @@ h1{
 }
 h2{
 	font-family: $font-primary;
-	padding-left: 5.5rem;
+	padding-left: 0rem;
+	@include breakpoint ($tablet-portrait){
+		padding-left: 5.5rem;
+	}
 }
 p {
   font-family: $font-primary;
