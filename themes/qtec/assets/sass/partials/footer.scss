@@ -21,9 +21,16 @@
     padding-bottom: 0.5rem;
   }
   grid-column: 2 / span 2;
+  @include breakpoint ($smartphone-portrait){
+    text-align: center;
+  }
+  
   @include breakpoint ($tablet-portrait){
     grid-column: 3 / span 2;
+    text-align: left;
+    margin-right: 2rem;
   }
+  
 }
 
 .grid-container-2{

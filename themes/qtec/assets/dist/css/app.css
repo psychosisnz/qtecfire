@@ -130,7 +130,7 @@ footer, a {
   position: fixed;
   z-index: 100;
   top: 1.5rem;
-  left: 9rem;
+  left: 11rem;
   color: white;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -148,9 +148,29 @@ footer, a {
   }
 }
 
+.facebook a {
+  position: fixed;
+  z-index: 100;
+  font-size: 1.2rem;
+  color: white;
+  top: 1.5rem;
+  left: 9rem;
+}
+
+@media (min-width: 771px) {
+  .facebook a {
+    top: 1.83rem;
+  }
+}
+
+.facebook a:hover {
+  color: #9badfd;
+  border: 1px white;
+}
+
 .up-top-icon {
   position: fixed;
-  bottom: 25px;
+  bottom: 10px;
   right: -120px;
   background-color: #2e2e2e;
   z-index: 10;
@@ -435,7 +455,7 @@ footer, a {
   position: fixed;
   z-index: 100;
   top: 1.5rem;
-  left: 9rem;
+  left: 11rem;
   color: white;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -453,9 +473,29 @@ footer, a {
   }
 }
 
+.facebook a {
+  position: fixed;
+  z-index: 100;
+  font-size: 1.2rem;
+  color: white;
+  top: 1.5rem;
+  left: 9rem;
+}
+
+@media (min-width: 771px) {
+  .facebook a {
+    top: 1.83rem;
+  }
+}
+
+.facebook a:hover {
+  color: #9badfd;
+  border: 1px white;
+}
+
 .up-top-icon {
   position: fixed;
-  bottom: 25px;
+  bottom: 10px;
   right: -120px;
   background-color: #2e2e2e;
   z-index: 10;
@@ -953,9 +993,17 @@ footer, a {
   padding-bottom: 0.5rem;
 }
 
+@media (min-width: 320px) {
+  .grid-item-1-1 {
+    text-align: center;
+  }
+}
+
 @media (min-width: 640px) {
   .grid-item-1-1 {
     grid-column: 3 / span 2;
+    text-align: left;
+    margin-right: 2rem;
   }
 }
 

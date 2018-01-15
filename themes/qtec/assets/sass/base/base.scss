@@ -117,7 +117,7 @@ footer, a {
 		position:fixed;
 		z-index: 100;
 		top: 1.5rem;
-		left: 9rem;
+		left: 11rem;
 		color: white;
 		font-family: $font-header-nav;
 		font-weight: 500;
@@ -132,9 +132,27 @@ footer, a {
 
 	}
 }
+.facebook {
+	
+	a{
+		position:fixed;
+		z-index: 100;
+		font-size:1.2rem;
+		color: rgb(255, 255, 255);
+		top: 1.5rem;
+		left: 9rem;
+		@include breakpoint ($tablet-landscape){
+			top: 1.83rem;
+		}
+		&:hover {
+			color: rgb(155, 173, 253);
+			border: 1px white
+		}
+	}
+}
 .up-top-icon{
 	position: fixed;
-	bottom: 25px;
+	bottom: 10px;
 	right: -120px;
 	background-color: rgb(46, 46, 46);
 	z-index: 10;
