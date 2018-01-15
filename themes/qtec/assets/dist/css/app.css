@@ -750,12 +750,13 @@ footer, a {
   .profile-text-section #profile-p-1 p {
     padding-top: 0;
     padding-left: 2rem;
+    padding-bottom: 0;
     -webkit-column-count: 1;
             column-count: 1;
   }
   .profile-text-section div#profile-p-2 {
     padding-left: 2rem;
-    padding-top: 1rem;
+    padding-top: 0;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
