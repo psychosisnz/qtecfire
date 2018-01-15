@@ -17,18 +17,28 @@ background-image: url("https://www.transparenttextures.com/patterns/transparent-
   }
 }
 .cards-container {
-  @include breakpoint ($desktop){
-    width: 75%;
-  }
+  
+
+  // @include breakpoint ($desktop){
+  //   width: 75%;
+  // }
   
 }
 .profile-cards-section{
+
   display:grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 2rem;
   @include breakpoint ($tablet-portrait){
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding-left: 2rem;
+  }
+  @include breakpoint ($desktop){
+    grid-gap: 1.5rem;
+    padding-left: 2rem;
+    width:80%;
   }
 }
 

@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => 'dsichinava@gmail.com',
+    'username' => 'system@qtec.nz',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => 'ooenywptkmrriuvc',
+    'password' => 'Applesareyum(24)+79',
 
     /*
     |--------------------------------------------------------------------------
